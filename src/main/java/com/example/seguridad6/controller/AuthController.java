@@ -25,7 +25,6 @@ import java.util.Set;
 @RestController
 @RequestMapping("/url/auth")
 public class AuthController {
-
     private final AuthenticationManager authenticationManager;
     private final UsuarioRepository usuarioRepository;
     private final RolRepository rolRepository;

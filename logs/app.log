@@ -259,3 +259,610 @@ Caused by: org.hibernate.HibernateException: Unable to determine Dialect without
 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
 	... 30 common frames omitted
 
+2025-11-17T15:45:57.481-05:00  INFO 15036 --- [seguridad6] [main] c.e.seguridad6.Seguridad6Application     : Starting Seguridad6Application using Java 21.0.6 with PID 15036 (C:\Users\docente.fia\Documents\security2025\target\classes started by docente.fia in C:\Users\docente.fia\Documents\security2025)
+2025-11-17T15:45:57.485-05:00  INFO 15036 --- [seguridad6] [main] c.e.seguridad6.Seguridad6Application     : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T15:45:58.275-05:00  INFO 15036 --- [seguridad6] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-17T15:45:58.344-05:00  INFO 15036 --- [seguridad6] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2025-11-17T15:45:59.015-05:00  INFO 15036 --- [seguridad6] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-17T15:45:59.043-05:00  INFO 15036 --- [seguridad6] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T15:45:59.044-05:00  INFO 15036 --- [seguridad6] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T15:45:59.133-05:00  INFO 15036 --- [seguridad6] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T15:45:59.134-05:00  INFO 15036 --- [seguridad6] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1578 ms
+2025-11-17T15:45:59.241-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : Class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@76ed5528
+2025-11-17T15:45:59.375-05:00  INFO 15036 --- [seguridad6] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-17T15:45:59.444-05:00  INFO 15036 --- [seguridad6] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-17T15:45:59.491-05:00  INFO 15036 --- [seguridad6] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-17T15:45:59.804-05:00  INFO 15036 --- [seguridad6] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-17T15:45:59.859-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - configuration:
+2025-11-17T15:45:59.861-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension.............false
+2025-11-17T15:45:59.862-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : autoCommit......................true
+2025-11-17T15:45:59.862-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : catalog.........................none
+2025-11-17T15:45:59.863-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : connectionInitSql...............none
+2025-11-17T15:45:59.863-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : connectionTestQuery.............none
+2025-11-17T15:45:59.863-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : connectionTimeout...............30000
+2025-11-17T15:45:59.864-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : credentials.....................com.zaxxer.hikari.util.Credentials@6d7b001b
+2025-11-17T15:45:59.865-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : dataSource......................none
+2025-11-17T15:45:59.865-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : dataSourceClassName.............none
+2025-11-17T15:45:59.866-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI..................none
+2025-11-17T15:45:59.866-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : dataSourceProperties............{password=<masked>}
+2025-11-17T15:45:59.867-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : driverClassName................."oracle.jdbc.OracleDriver"
+2025-11-17T15:45:59.868-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : exceptionOverride...............none
+2025-11-17T15:45:59.868-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : exceptionOverrideClassName......none
+2025-11-17T15:45:59.868-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : healthCheckProperties...........{}
+2025-11-17T15:45:59.869-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry.............none
+2025-11-17T15:45:59.869-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : idleTimeout.....................600000
+2025-11-17T15:45:59.870-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : initializationFailTimeout.......1
+2025-11-17T15:45:59.870-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries..........false
+2025-11-17T15:45:59.870-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : jdbcUrl.........................jdbc:oracle:thin:@localhost:1521/XEPDB1
+2025-11-17T15:45:59.871-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : keepaliveTime...................120000
+2025-11-17T15:45:59.871-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold..........0
+2025-11-17T15:45:59.872-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : maxLifetime.....................1800000
+2025-11-17T15:45:59.872-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : maximumPoolSize.................10
+2025-11-17T15:45:59.872-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : metricRegistry..................none
+2025-11-17T15:45:59.872-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory...........none
+2025-11-17T15:45:59.873-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : minimumIdle.....................10
+2025-11-17T15:45:59.873-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : password........................<masked>
+2025-11-17T15:45:59.873-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : poolName........................"HikariPool-1"
+2025-11-17T15:45:59.874-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : readOnly........................false
+2025-11-17T15:45:59.874-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : registerMbeans..................false
+2025-11-17T15:45:59.874-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : scheduledExecutor...............none
+2025-11-17T15:45:59.874-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : schema..........................none
+2025-11-17T15:45:59.875-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : threadFactory...................internal
+2025-11-17T15:45:59.875-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : transactionIsolation............default
+2025-11-17T15:45:59.875-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : username........................"seguridadDB"
+2025-11-17T15:45:59.875-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : validationTimeout...............5000
+2025-11-17T15:45:59.875-05:00  INFO 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-17T15:45:59.887-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (1acb0bd6-2711-4424-bf41-dbaf31f9f14d)
+2025-11-17T15:46:00.371-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (1acb0bd6-2711-4424-bf41-dbaf31f9f14d)
+2025-11-17T15:46:00.373-05:00  INFO 15036 --- [seguridad6] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@71dd4624
+2025-11-17T15:46:00.375-05:00  INFO 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-17T15:46:00.477-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=1/10, idle=0/10, active=1, waiting=0)
+2025-11-17T15:46:00.478-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (c31b39f2-324f-4dcd-865b-84ffcdeab345)
+2025-11-17T15:46:00.564-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (c31b39f2-324f-4dcd-865b-84ffcdeab345)
+2025-11-17T15:46:00.565-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5dc07106
+2025-11-17T15:46:00.596-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=2/10, idle=1/10, active=1, waiting=0)
+2025-11-17T15:46:00.596-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (87b77230-275d-4233-b463-aed9a3afa578)
+2025-11-17T15:46:00.663-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (87b77230-275d-4233-b463-aed9a3afa578)
+2025-11-17T15:46:00.664-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@32e5551f
+2025-11-17T15:46:00.694-05:00  INFO 15036 --- [seguridad6] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-17T15:46:00.695-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=3/10, idle=3/10, active=0, waiting=0)
+2025-11-17T15:46:00.695-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (0b0c1da7-0992-4b78-ad74-aef346c04b43)
+2025-11-17T15:46:00.748-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (0b0c1da7-0992-4b78-ad74-aef346c04b43)
+2025-11-17T15:46:00.749-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@b8e5431
+2025-11-17T15:46:00.780-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=4/10, idle=4/10, active=0, waiting=0)
+2025-11-17T15:46:00.780-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (5ee6d36b-a575-4a59-8399-5e242698c7c0)
+2025-11-17T15:46:00.848-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (5ee6d36b-a575-4a59-8399-5e242698c7c0)
+2025-11-17T15:46:00.848-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5cfd8b2d
+2025-11-17T15:46:00.880-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=5/10, idle=5/10, active=0, waiting=0)
+2025-11-17T15:46:00.880-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (85c9a5b7-8817-4055-8baf-3ca4223fc373)
+2025-11-17T15:46:00.933-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (85c9a5b7-8817-4055-8baf-3ca4223fc373)
+2025-11-17T15:46:00.933-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3419857d
+2025-11-17T15:46:00.965-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=6/10, idle=6/10, active=0, waiting=0)
+2025-11-17T15:46:00.965-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (5aead7ae-cd50-4bf7-add8-9a5da8d3d722)
+2025-11-17T15:46:01.034-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (5aead7ae-cd50-4bf7-add8-9a5da8d3d722)
+2025-11-17T15:46:01.034-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@4fc6e940
+2025-11-17T15:46:01.064-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=7/10, idle=7/10, active=0, waiting=0)
+2025-11-17T15:46:01.064-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (3c87856f-f9dd-4b8e-bd10-2cdcc15b5494)
+2025-11-17T15:46:01.131-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (3c87856f-f9dd-4b8e-bd10-2cdcc15b5494)
+2025-11-17T15:46:01.131-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1f83bff4
+2025-11-17T15:46:01.162-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=8/10, idle=8/10, active=0, waiting=0)
+2025-11-17T15:46:01.162-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (fbce8bb7-f980-4a9b-a21a-97a02d715589)
+2025-11-17T15:46:01.218-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (fbce8bb7-f980-4a9b-a21a-97a02d715589)
+2025-11-17T15:46:01.218-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2f59dd7e
+2025-11-17T15:46:01.249-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=9/10, idle=9/10, active=0, waiting=0)
+2025-11-17T15:46:01.249-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (441bdc6f-786c-4738-96b3-7ee0dc31cec9)
+2025-11-17T15:46:01.330-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (441bdc6f-786c-4738-96b3-7ee0dc31cec9)
+2025-11-17T15:46:01.331-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@61aaa821
+2025-11-17T15:46:01.362-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-11-17T15:46:01.362-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Connection not added, stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-11-17T15:46:01.813-05:00  INFO 15036 --- [seguridad6] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-17T15:46:03.287-05:00  INFO 15036 --- [seguridad6] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-17T15:46:03.300-05:00  WARN 15036 --- [seguridad6] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\docente.fia\Documents\security2025\target\classes\com\example\seguridad6\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-11-17T15:46:03.300-05:00  INFO 15036 --- [seguridad6] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-17T15:46:03.302-05:00  INFO 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-17T15:46:03.302-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before shutdown stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-11-17T15:46:03.304-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@71dd4624: (connection evicted)
+2025-11-17T15:46:03.309-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@5dc07106: (connection evicted)
+2025-11-17T15:46:03.310-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@32e5551f: (connection evicted)
+2025-11-17T15:46:03.311-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@b8e5431: (connection evicted)
+2025-11-17T15:46:03.312-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@5cfd8b2d: (connection evicted)
+2025-11-17T15:46:03.315-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@3419857d: (connection evicted)
+2025-11-17T15:46:03.316-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@4fc6e940: (connection evicted)
+2025-11-17T15:46:03.318-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@1f83bff4: (connection evicted)
+2025-11-17T15:46:03.319-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@2f59dd7e: (connection evicted)
+2025-11-17T15:46:03.320-05:00 DEBUG 15036 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@61aaa821: (connection evicted)
+2025-11-17T15:46:03.322-05:00 DEBUG 15036 --- [seguridad6] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  shutdown stats (total=0/10, idle=0/10, active=0, waiting=0)
+2025-11-17T15:46:03.322-05:00  INFO 15036 --- [seguridad6] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-17T15:46:03.325-05:00  INFO 15036 --- [seguridad6] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-11-17T15:46:03.335-05:00  INFO 15036 --- [seguridad6] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-17T15:46:03.358-05:00 ERROR 15036 --- [seguridad6] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.example.seguridad6.controller.AuthController required a bean of type 'org.springframework.security.authentication.AuthenticationManager' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.AuthenticationManager' in your configuration.
+
+2025-11-17T15:51:46.286-05:00  INFO 14880 --- [seguridad6] [main] c.e.seguridad6.Seguridad6Application     : Starting Seguridad6Application using Java 21.0.6 with PID 14880 (C:\Users\docente.fia\Documents\security2025\target\classes started by docente.fia in C:\Users\docente.fia\Documents\security2025)
+2025-11-17T15:51:46.289-05:00  INFO 14880 --- [seguridad6] [main] c.e.seguridad6.Seguridad6Application     : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T15:51:47.002-05:00  INFO 14880 --- [seguridad6] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-17T15:51:47.066-05:00  INFO 14880 --- [seguridad6] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2025-11-17T15:51:47.656-05:00  INFO 14880 --- [seguridad6] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-17T15:51:47.671-05:00  INFO 14880 --- [seguridad6] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T15:51:47.671-05:00  INFO 14880 --- [seguridad6] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T15:51:47.718-05:00  INFO 14880 --- [seguridad6] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T15:51:47.719-05:00  INFO 14880 --- [seguridad6] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1382 ms
+2025-11-17T15:51:47.822-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : Class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@76ed5528
+2025-11-17T15:51:47.970-05:00  INFO 14880 --- [seguridad6] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-17T15:51:48.043-05:00  INFO 14880 --- [seguridad6] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-17T15:51:48.088-05:00  INFO 14880 --- [seguridad6] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-17T15:51:48.391-05:00  INFO 14880 --- [seguridad6] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-17T15:51:48.421-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - configuration:
+2025-11-17T15:51:48.423-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension.............false
+2025-11-17T15:51:48.424-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : autoCommit......................true
+2025-11-17T15:51:48.424-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : catalog.........................none
+2025-11-17T15:51:48.424-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : connectionInitSql...............none
+2025-11-17T15:51:48.425-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : connectionTestQuery.............none
+2025-11-17T15:51:48.425-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : connectionTimeout...............30000
+2025-11-17T15:51:48.425-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : credentials.....................com.zaxxer.hikari.util.Credentials@53dba9cd
+2025-11-17T15:51:48.425-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : dataSource......................none
+2025-11-17T15:51:48.425-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : dataSourceClassName.............none
+2025-11-17T15:51:48.425-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI..................none
+2025-11-17T15:51:48.426-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : dataSourceProperties............{password=<masked>}
+2025-11-17T15:51:48.426-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : driverClassName................."oracle.jdbc.OracleDriver"
+2025-11-17T15:51:48.426-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : exceptionOverride...............none
+2025-11-17T15:51:48.426-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : exceptionOverrideClassName......none
+2025-11-17T15:51:48.427-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : healthCheckProperties...........{}
+2025-11-17T15:51:48.427-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry.............none
+2025-11-17T15:51:48.427-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : idleTimeout.....................600000
+2025-11-17T15:51:48.427-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : initializationFailTimeout.......1
+2025-11-17T15:51:48.427-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries..........false
+2025-11-17T15:51:48.428-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : jdbcUrl.........................jdbc:oracle:thin:@localhost:1521/XEPDB1
+2025-11-17T15:51:48.428-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : keepaliveTime...................120000
+2025-11-17T15:51:48.428-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold..........0
+2025-11-17T15:51:48.428-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : maxLifetime.....................1800000
+2025-11-17T15:51:48.428-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : maximumPoolSize.................10
+2025-11-17T15:51:48.428-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : metricRegistry..................none
+2025-11-17T15:51:48.429-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory...........none
+2025-11-17T15:51:48.429-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : minimumIdle.....................10
+2025-11-17T15:51:48.429-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : password........................<masked>
+2025-11-17T15:51:48.429-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : poolName........................"HikariPool-1"
+2025-11-17T15:51:48.429-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : readOnly........................false
+2025-11-17T15:51:48.430-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : registerMbeans..................false
+2025-11-17T15:51:48.430-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : scheduledExecutor...............none
+2025-11-17T15:51:48.430-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : schema..........................none
+2025-11-17T15:51:48.431-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : threadFactory...................internal
+2025-11-17T15:51:48.431-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : transactionIsolation............default
+2025-11-17T15:51:48.431-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : username........................"seguridadDB"
+2025-11-17T15:51:48.431-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : validationTimeout...............5000
+2025-11-17T15:51:48.431-05:00  INFO 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-17T15:51:48.439-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (4d125e6c-5d7c-4faa-8a68-187d716d9d26)
+2025-11-17T15:51:48.861-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (4d125e6c-5d7c-4faa-8a68-187d716d9d26)
+2025-11-17T15:51:48.862-05:00  INFO 14880 --- [seguridad6] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2211b44f
+2025-11-17T15:51:48.864-05:00  INFO 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-17T15:51:48.966-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=1/10, idle=0/10, active=1, waiting=0)
+2025-11-17T15:51:48.967-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (4a40f8ad-b78e-4cf2-9fe3-0dd8aee28646)
+2025-11-17T15:51:49.049-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (4a40f8ad-b78e-4cf2-9fe3-0dd8aee28646)
+2025-11-17T15:51:49.049-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2d04a1a6
+2025-11-17T15:51:49.094-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=2/10, idle=1/10, active=1, waiting=0)
+2025-11-17T15:51:49.094-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (3c50a499-8866-43bc-b77d-792ac1666ac7)
+2025-11-17T15:51:49.152-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (3c50a499-8866-43bc-b77d-792ac1666ac7)
+2025-11-17T15:51:49.152-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@36a8909e
+2025-11-17T15:51:49.189-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=3/10, idle=3/10, active=0, waiting=0)
+2025-11-17T15:51:49.190-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (fc39afb6-c7e5-4a65-99a7-81fb84232c9f)
+2025-11-17T15:51:49.192-05:00  INFO 14880 --- [seguridad6] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-17T15:51:49.245-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (fc39afb6-c7e5-4a65-99a7-81fb84232c9f)
+2025-11-17T15:51:49.245-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@4bf5e500
+2025-11-17T15:51:49.283-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=4/10, idle=4/10, active=0, waiting=0)
+2025-11-17T15:51:49.283-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (e29c8808-32d1-4183-bbbc-0f547f198e02)
+2025-11-17T15:51:49.344-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (e29c8808-32d1-4183-bbbc-0f547f198e02)
+2025-11-17T15:51:49.344-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@22dff3fa
+2025-11-17T15:51:49.378-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=5/10, idle=5/10, active=0, waiting=0)
+2025-11-17T15:51:49.378-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (50f95c71-b712-4d05-a3d0-bc0d6063b9ca)
+2025-11-17T15:51:49.429-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (50f95c71-b712-4d05-a3d0-bc0d6063b9ca)
+2025-11-17T15:51:49.430-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@640c435f
+2025-11-17T15:51:49.474-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=6/10, idle=6/10, active=0, waiting=0)
+2025-11-17T15:51:49.474-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (ca896e4f-fbe4-4b9b-9147-d10f10410da3)
+2025-11-17T15:51:49.538-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (ca896e4f-fbe4-4b9b-9147-d10f10410da3)
+2025-11-17T15:51:49.538-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7a0e9faa
+2025-11-17T15:51:49.569-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=7/10, idle=7/10, active=0, waiting=0)
+2025-11-17T15:51:49.569-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (3cbf8f26-d8bd-4b30-920c-8eac762bf6e1)
+2025-11-17T15:51:49.628-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (3cbf8f26-d8bd-4b30-920c-8eac762bf6e1)
+2025-11-17T15:51:49.628-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@378a431d
+2025-11-17T15:51:49.659-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=8/10, idle=8/10, active=0, waiting=0)
+2025-11-17T15:51:49.659-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (2585d1cd-310d-41ce-a6d9-0254aad2cdc9)
+2025-11-17T15:51:49.722-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (2585d1cd-310d-41ce-a6d9-0254aad2cdc9)
+2025-11-17T15:51:49.723-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@13d46105
+2025-11-17T15:51:49.755-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=9/10, idle=9/10, active=0, waiting=0)
+2025-11-17T15:51:49.755-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (bd0710ad-a0c6-4903-abed-51f565e7c4f9)
+2025-11-17T15:51:49.824-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (bd0710ad-a0c6-4903-abed-51f565e7c4f9)
+2025-11-17T15:51:49.825-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1b6d2d4a
+2025-11-17T15:51:49.857-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-11-17T15:51:49.857-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Connection not added, stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-11-17T15:51:50.248-05:00  INFO 14880 --- [seguridad6] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-17T15:51:55.660-05:00  INFO 14880 --- [seguridad6] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-17T15:51:55.671-05:00  WARN 14880 --- [seguridad6] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\docente.fia\Documents\security2025\target\classes\com\example\seguridad6\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'securityConfig' defined in file [C:\Users\docente.fia\Documents\security2025\target\classes\com\example\seguridad6\seguridad\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.security.core.userdetails.UserDetailsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-11-17T15:51:55.672-05:00  INFO 14880 --- [seguridad6] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-17T15:51:55.674-05:00  INFO 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-17T15:51:55.674-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before shutdown stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-11-17T15:51:55.676-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@2211b44f: (connection evicted)
+2025-11-17T15:51:55.680-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@2d04a1a6: (connection evicted)
+2025-11-17T15:51:55.681-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@36a8909e: (connection evicted)
+2025-11-17T15:51:55.682-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@4bf5e500: (connection evicted)
+2025-11-17T15:51:55.684-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@22dff3fa: (connection evicted)
+2025-11-17T15:51:55.686-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@640c435f: (connection evicted)
+2025-11-17T15:51:55.689-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@7a0e9faa: (connection evicted)
+2025-11-17T15:51:55.691-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@378a431d: (connection evicted)
+2025-11-17T15:51:55.693-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@13d46105: (connection evicted)
+2025-11-17T15:51:55.694-05:00 DEBUG 14880 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@1b6d2d4a: (connection evicted)
+2025-11-17T15:51:55.697-05:00 DEBUG 14880 --- [seguridad6] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  shutdown stats (total=0/10, idle=0/10, active=0, waiting=0)
+2025-11-17T15:51:55.697-05:00  INFO 14880 --- [seguridad6] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-17T15:51:55.699-05:00  INFO 14880 --- [seguridad6] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-11-17T15:51:55.711-05:00  INFO 14880 --- [seguridad6] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-17T15:51:55.731-05:00 ERROR 14880 --- [seguridad6] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.example.seguridad6.seguridad.SecurityConfig required a bean of type 'org.springframework.security.core.userdetails.UserDetailsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.core.userdetails.UserDetailsService' in your configuration.
+
+2025-11-17T15:54:13.817-05:00  INFO 6508 --- [seguridad6] [main] c.e.seguridad6.Seguridad6Application     : Starting Seguridad6Application using Java 21.0.6 with PID 6508 (C:\Users\docente.fia\Documents\security2025\target\classes started by docente.fia in C:\Users\docente.fia\Documents\security2025)
+2025-11-17T15:54:13.820-05:00  INFO 6508 --- [seguridad6] [main] c.e.seguridad6.Seguridad6Application     : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T15:54:14.557-05:00  INFO 6508 --- [seguridad6] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-17T15:54:14.630-05:00  INFO 6508 --- [seguridad6] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
+2025-11-17T15:54:15.240-05:00  INFO 6508 --- [seguridad6] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-17T15:54:15.255-05:00  INFO 6508 --- [seguridad6] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T15:54:15.255-05:00  INFO 6508 --- [seguridad6] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T15:54:15.321-05:00  INFO 6508 --- [seguridad6] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T15:54:15.322-05:00  INFO 6508 --- [seguridad6] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1453 ms
+2025-11-17T15:54:15.442-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : Class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@76ed5528
+2025-11-17T15:54:15.579-05:00  INFO 6508 --- [seguridad6] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-17T15:54:15.657-05:00  INFO 6508 --- [seguridad6] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-17T15:54:15.690-05:00  INFO 6508 --- [seguridad6] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-17T15:54:16.036-05:00  INFO 6508 --- [seguridad6] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-17T15:54:16.083-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - configuration:
+2025-11-17T15:54:16.085-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension.............false
+2025-11-17T15:54:16.085-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : autoCommit......................true
+2025-11-17T15:54:16.085-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : catalog.........................none
+2025-11-17T15:54:16.085-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : connectionInitSql...............none
+2025-11-17T15:54:16.086-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : connectionTestQuery.............none
+2025-11-17T15:54:16.086-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : connectionTimeout...............30000
+2025-11-17T15:54:16.086-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : credentials.....................com.zaxxer.hikari.util.Credentials@247bbfba
+2025-11-17T15:54:16.086-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : dataSource......................none
+2025-11-17T15:54:16.086-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : dataSourceClassName.............none
+2025-11-17T15:54:16.086-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI..................none
+2025-11-17T15:54:16.087-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : dataSourceProperties............{password=<masked>}
+2025-11-17T15:54:16.087-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : driverClassName................."oracle.jdbc.OracleDriver"
+2025-11-17T15:54:16.087-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : exceptionOverride...............none
+2025-11-17T15:54:16.087-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : exceptionOverrideClassName......none
+2025-11-17T15:54:16.088-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : healthCheckProperties...........{}
+2025-11-17T15:54:16.088-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry.............none
+2025-11-17T15:54:16.088-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : idleTimeout.....................600000
+2025-11-17T15:54:16.088-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : initializationFailTimeout.......1
+2025-11-17T15:54:16.088-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries..........false
+2025-11-17T15:54:16.089-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : jdbcUrl.........................jdbc:oracle:thin:@localhost:1521/XEPDB1
+2025-11-17T15:54:16.089-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : keepaliveTime...................120000
+2025-11-17T15:54:16.089-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold..........0
+2025-11-17T15:54:16.089-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : maxLifetime.....................1800000
+2025-11-17T15:54:16.089-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : maximumPoolSize.................10
+2025-11-17T15:54:16.090-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : metricRegistry..................none
+2025-11-17T15:54:16.090-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory...........none
+2025-11-17T15:54:16.090-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : minimumIdle.....................10
+2025-11-17T15:54:16.090-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : password........................<masked>
+2025-11-17T15:54:16.090-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : poolName........................"HikariPool-1"
+2025-11-17T15:54:16.091-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : readOnly........................false
+2025-11-17T15:54:16.091-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : registerMbeans..................false
+2025-11-17T15:54:16.091-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : scheduledExecutor...............none
+2025-11-17T15:54:16.091-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : schema..........................none
+2025-11-17T15:54:16.092-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : threadFactory...................internal
+2025-11-17T15:54:16.092-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : transactionIsolation............default
+2025-11-17T15:54:16.092-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : username........................"seguridadDB"
+2025-11-17T15:54:16.092-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : validationTimeout...............5000
+2025-11-17T15:54:16.093-05:00  INFO 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-17T15:54:16.107-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (8d2d9cf9-d7cb-4c10-a54e-63766a828a61)
+2025-11-17T15:54:16.516-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (8d2d9cf9-d7cb-4c10-a54e-63766a828a61)
+2025-11-17T15:54:16.517-05:00  INFO 6508 --- [seguridad6] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2211b44f
+2025-11-17T15:54:16.519-05:00  INFO 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-17T15:54:16.633-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=1/10, idle=0/10, active=1, waiting=0)
+2025-11-17T15:54:16.634-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (fd68d473-005f-41f3-8604-d7d17dfea9f8)
+2025-11-17T15:54:16.692-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (fd68d473-005f-41f3-8604-d7d17dfea9f8)
+2025-11-17T15:54:16.692-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@563b319c
+2025-11-17T15:54:16.727-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=2/10, idle=1/10, active=1, waiting=0)
+2025-11-17T15:54:16.727-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (c399346d-0635-4b59-8a76-6ed76bc2864a)
+2025-11-17T15:54:16.782-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (c399346d-0635-4b59-8a76-6ed76bc2864a)
+2025-11-17T15:54:16.782-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@c5b03e2
+2025-11-17T15:54:16.822-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=3/10, idle=2/10, active=1, waiting=0)
+2025-11-17T15:54:16.822-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (c9994252-04e1-4f36-8e94-7fc2dda242ac)
+2025-11-17T15:54:16.841-05:00  INFO 6508 --- [seguridad6] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-17T15:54:16.881-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (c9994252-04e1-4f36-8e94-7fc2dda242ac)
+2025-11-17T15:54:16.882-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1c40deca
+2025-11-17T15:54:16.918-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=4/10, idle=4/10, active=0, waiting=0)
+2025-11-17T15:54:16.918-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (8e2a51bf-1912-4c05-953b-eb8e159b31c3)
+2025-11-17T15:54:16.975-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (8e2a51bf-1912-4c05-953b-eb8e159b31c3)
+2025-11-17T15:54:16.975-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7aaad94c
+2025-11-17T15:54:17.013-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=5/10, idle=5/10, active=0, waiting=0)
+2025-11-17T15:54:17.013-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (9c0d7768-e1f3-4bf5-986a-ca57ee7685b1)
+2025-11-17T15:54:17.068-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (9c0d7768-e1f3-4bf5-986a-ca57ee7685b1)
+2025-11-17T15:54:17.068-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6d6c014d
+2025-11-17T15:54:17.107-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=6/10, idle=6/10, active=0, waiting=0)
+2025-11-17T15:54:17.107-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (32a910a0-bca7-4335-9294-eb81ed7adfd5)
+2025-11-17T15:54:17.159-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (32a910a0-bca7-4335-9294-eb81ed7adfd5)
+2025-11-17T15:54:17.159-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@36e7603c
+2025-11-17T15:54:17.203-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=7/10, idle=7/10, active=0, waiting=0)
+2025-11-17T15:54:17.203-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (03a26140-7449-44c0-9581-848eb822f42f)
+2025-11-17T15:54:17.255-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (03a26140-7449-44c0-9581-848eb822f42f)
+2025-11-17T15:54:17.255-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5cf1e38
+2025-11-17T15:54:17.296-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=8/10, idle=8/10, active=0, waiting=0)
+2025-11-17T15:54:17.296-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (f7694649-5f10-4594-9f2c-762a6d88e8d2)
+2025-11-17T15:54:17.349-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (f7694649-5f10-4594-9f2c-762a6d88e8d2)
+2025-11-17T15:54:17.349-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1ba749da
+2025-11-17T15:54:17.381-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=9/10, idle=9/10, active=0, waiting=0)
+2025-11-17T15:54:17.381-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (46e3ab50-a4b5-4d1e-95ba-33944c0d942c)
+2025-11-17T15:54:17.458-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (46e3ab50-a4b5-4d1e-95ba-33944c0d942c)
+2025-11-17T15:54:17.458-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@44398482
+2025-11-17T15:54:17.489-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-11-17T15:54:17.489-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Connection not added, stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-11-17T15:54:17.904-05:00  INFO 6508 --- [seguridad6] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-17T15:54:18.635-05:00  INFO 6508 --- [seguridad6] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-17T15:54:19.032-05:00  INFO 6508 --- [seguridad6] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-11-17T15:54:19.033-05:00  WARN 6508 --- [seguridad6] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-11-17T15:54:19.049-05:00  WARN 6508 --- [seguridad6] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\docente.fia\Documents\security2025\target\classes\com\example\seguridad6\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 4: Error creating bean with name 'jwtProvider': Injection of autowired dependencies failed
+2025-11-17T15:54:19.050-05:00  INFO 6508 --- [seguridad6] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-17T15:54:19.052-05:00  INFO 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-17T15:54:19.052-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before shutdown stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-11-17T15:54:19.054-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@2211b44f: (connection evicted)
+2025-11-17T15:54:19.057-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@563b319c: (connection evicted)
+2025-11-17T15:54:19.059-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@c5b03e2: (connection evicted)
+2025-11-17T15:54:19.060-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@1c40deca: (connection evicted)
+2025-11-17T15:54:19.062-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@7aaad94c: (connection evicted)
+2025-11-17T15:54:19.064-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@6d6c014d: (connection evicted)
+2025-11-17T15:54:19.066-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@36e7603c: (connection evicted)
+2025-11-17T15:54:19.068-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@5cf1e38: (connection evicted)
+2025-11-17T15:54:19.070-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@1ba749da: (connection evicted)
+2025-11-17T15:54:19.072-05:00 DEBUG 6508 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@44398482: (connection evicted)
+2025-11-17T15:54:19.074-05:00 DEBUG 6508 --- [seguridad6] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  shutdown stats (total=0/10, idle=0/10, active=0, waiting=0)
+2025-11-17T15:54:19.074-05:00  INFO 6508 --- [seguridad6] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-17T15:54:19.077-05:00  INFO 6508 --- [seguridad6] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-11-17T15:54:19.093-05:00  INFO 6508 --- [seguridad6] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-17T15:54:19.110-05:00 ERROR 6508 --- [seguridad6] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\docente.fia\Documents\security2025\target\classes\com\example\seguridad6\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 4: Error creating bean with name 'jwtProvider': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.7.jar:3.5.7]
+	at com.example.seguridad6.Seguridad6Application.main(Seguridad6Application.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtProvider': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:515) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1708) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.12.jar:6.2.12]
+	... 21 common frames omitted
+Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'jwt.secret' in value "${jwt.secret}"
+	at org.springframework.util.PlaceholderResolutionException.withValue(PlaceholderResolutionException.java:81) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.util.PlaceholderParser$ParsedValue.resolve(PlaceholderParser.java:298) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.util.PlaceholderParser.replacePlaceholders(PlaceholderParser.java:131) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:114) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:293) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:264) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:186) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:970) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1675) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.12.jar:6.2.12]
+	... 32 common frames omitted
+
+2025-11-17T15:55:34.078-05:00  INFO 13664 --- [seguridad6] [main] c.e.seguridad6.Seguridad6Application     : Starting Seguridad6Application using Java 21.0.6 with PID 13664 (C:\Users\docente.fia\Documents\security2025\target\classes started by docente.fia in C:\Users\docente.fia\Documents\security2025)
+2025-11-17T15:55:34.081-05:00  INFO 13664 --- [seguridad6] [main] c.e.seguridad6.Seguridad6Application     : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T15:55:34.858-05:00  INFO 13664 --- [seguridad6] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-17T15:55:34.928-05:00  INFO 13664 --- [seguridad6] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2025-11-17T15:55:35.496-05:00  INFO 13664 --- [seguridad6] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-17T15:55:35.517-05:00  INFO 13664 --- [seguridad6] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T15:55:35.517-05:00  INFO 13664 --- [seguridad6] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T15:55:35.580-05:00  INFO 13664 --- [seguridad6] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T15:55:35.581-05:00  INFO 13664 --- [seguridad6] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1448 ms
+2025-11-17T15:55:35.714-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : Class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@76ed5528
+2025-11-17T15:55:35.861-05:00  INFO 13664 --- [seguridad6] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-17T15:55:35.951-05:00  INFO 13664 --- [seguridad6] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-17T15:55:35.988-05:00  INFO 13664 --- [seguridad6] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-17T15:55:36.289-05:00  INFO 13664 --- [seguridad6] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-17T15:55:36.319-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - configuration:
+2025-11-17T15:55:36.321-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension.............false
+2025-11-17T15:55:36.322-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : autoCommit......................true
+2025-11-17T15:55:36.322-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : catalog.........................none
+2025-11-17T15:55:36.322-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : connectionInitSql...............none
+2025-11-17T15:55:36.322-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : connectionTestQuery.............none
+2025-11-17T15:55:36.322-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : connectionTimeout...............30000
+2025-11-17T15:55:36.323-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : credentials.....................com.zaxxer.hikari.util.Credentials@4eb63dc8
+2025-11-17T15:55:36.323-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : dataSource......................none
+2025-11-17T15:55:36.323-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : dataSourceClassName.............none
+2025-11-17T15:55:36.323-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI..................none
+2025-11-17T15:55:36.324-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : dataSourceProperties............{password=<masked>}
+2025-11-17T15:55:36.324-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : driverClassName................."oracle.jdbc.OracleDriver"
+2025-11-17T15:55:36.324-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : exceptionOverride...............none
+2025-11-17T15:55:36.324-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : exceptionOverrideClassName......none
+2025-11-17T15:55:36.325-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : healthCheckProperties...........{}
+2025-11-17T15:55:36.325-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry.............none
+2025-11-17T15:55:36.325-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : idleTimeout.....................600000
+2025-11-17T15:55:36.325-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : initializationFailTimeout.......1
+2025-11-17T15:55:36.325-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries..........false
+2025-11-17T15:55:36.326-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : jdbcUrl.........................jdbc:oracle:thin:@localhost:1521/XEPDB1
+2025-11-17T15:55:36.326-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : keepaliveTime...................120000
+2025-11-17T15:55:36.326-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold..........0
+2025-11-17T15:55:36.326-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : maxLifetime.....................1800000
+2025-11-17T15:55:36.326-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : maximumPoolSize.................10
+2025-11-17T15:55:36.327-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : metricRegistry..................none
+2025-11-17T15:55:36.327-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory...........none
+2025-11-17T15:55:36.327-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : minimumIdle.....................10
+2025-11-17T15:55:36.327-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : password........................<masked>
+2025-11-17T15:55:36.327-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : poolName........................"HikariPool-1"
+2025-11-17T15:55:36.327-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : readOnly........................false
+2025-11-17T15:55:36.328-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : registerMbeans..................false
+2025-11-17T15:55:36.328-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : scheduledExecutor...............none
+2025-11-17T15:55:36.328-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : schema..........................none
+2025-11-17T15:55:36.329-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : threadFactory...................internal
+2025-11-17T15:55:36.329-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : transactionIsolation............default
+2025-11-17T15:55:36.330-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : username........................"seguridadDB"
+2025-11-17T15:55:36.330-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariConfig           : validationTimeout...............5000
+2025-11-17T15:55:36.330-05:00  INFO 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-17T15:55:36.340-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (bafc042d-b342-4c9f-ac0b-b05e648d7a6b)
+2025-11-17T15:55:36.761-05:00 DEBUG 13664 --- [seguridad6] [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (bafc042d-b342-4c9f-ac0b-b05e648d7a6b)
+2025-11-17T15:55:36.763-05:00  INFO 13664 --- [seguridad6] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@15f519f7
+2025-11-17T15:55:36.764-05:00  INFO 13664 --- [seguridad6] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-17T15:55:36.865-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=1/10, idle=0/10, active=1, waiting=0)
+2025-11-17T15:55:36.865-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (20b05c48-6742-4cd7-b467-78f73280cbde)
+2025-11-17T15:55:36.920-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (20b05c48-6742-4cd7-b467-78f73280cbde)
+2025-11-17T15:55:36.921-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5ce655a5
+2025-11-17T15:55:36.952-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=2/10, idle=1/10, active=1, waiting=0)
+2025-11-17T15:55:36.953-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (5ddeb27d-519e-4f78-b4ed-1c7c6ef3d564)
+2025-11-17T15:55:37.017-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (5ddeb27d-519e-4f78-b4ed-1c7c6ef3d564)
+2025-11-17T15:55:37.017-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@46bab587
+2025-11-17T15:55:37.048-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=3/10, idle=2/10, active=1, waiting=0)
+2025-11-17T15:55:37.048-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (da0ef5a5-bbaf-40d6-b81f-7900a66fdc78)
+2025-11-17T15:55:37.078-05:00  INFO 13664 --- [seguridad6] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-17T15:55:37.098-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (da0ef5a5-bbaf-40d6-b81f-7900a66fdc78)
+2025-11-17T15:55:37.098-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@12a1225e
+2025-11-17T15:55:37.129-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=4/10, idle=4/10, active=0, waiting=0)
+2025-11-17T15:55:37.129-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (02b322ca-1c20-4a63-b9c6-4ae9d111da12)
+2025-11-17T15:55:37.195-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (02b322ca-1c20-4a63-b9c6-4ae9d111da12)
+2025-11-17T15:55:37.195-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2fab0bb2
+2025-11-17T15:55:37.226-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=5/10, idle=5/10, active=0, waiting=0)
+2025-11-17T15:55:37.226-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (729356ea-4e83-45f7-ae25-b9846cba755e)
+2025-11-17T15:55:37.279-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (729356ea-4e83-45f7-ae25-b9846cba755e)
+2025-11-17T15:55:37.279-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1f670068
+2025-11-17T15:55:37.310-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=6/10, idle=6/10, active=0, waiting=0)
+2025-11-17T15:55:37.310-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (ba63ca16-90a9-4c01-a7e5-56a6d4a68302)
+2025-11-17T15:55:37.363-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (ba63ca16-90a9-4c01-a7e5-56a6d4a68302)
+2025-11-17T15:55:37.363-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5c853701
+2025-11-17T15:55:37.394-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=7/10, idle=7/10, active=0, waiting=0)
+2025-11-17T15:55:37.394-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (aff8e448-bc99-45f5-af99-efea371e3306)
+2025-11-17T15:55:37.468-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (aff8e448-bc99-45f5-af99-efea371e3306)
+2025-11-17T15:55:37.468-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5c74f913
+2025-11-17T15:55:37.500-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=8/10, idle=8/10, active=0, waiting=0)
+2025-11-17T15:55:37.500-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (a315a527-4004-4c3d-ade4-1fa95f66940a)
+2025-11-17T15:55:37.554-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (a315a527-4004-4c3d-ade4-1fa95f66940a)
+2025-11-17T15:55:37.554-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7d8dfbc8
+2025-11-17T15:55:37.585-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=9/10, idle=9/10, active=0, waiting=0)
+2025-11-17T15:55:37.585-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (0132e914-601c-4fdd-a4d4-f5db56882537)
+2025-11-17T15:55:37.659-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (0132e914-601c-4fdd-a4d4-f5db56882537)
+2025-11-17T15:55:37.659-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@460c7113
+2025-11-17T15:55:37.691-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-11-17T15:55:37.691-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Connection not added, stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-11-17T15:55:38.102-05:00  INFO 13664 --- [seguridad6] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-17T15:55:38.385-05:00  INFO 13664 --- [seguridad6] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-17T15:55:38.774-05:00  INFO 13664 --- [seguridad6] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-11-17T15:55:38.774-05:00  WARN 13664 --- [seguridad6] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-11-17T15:55:39.406-05:00  INFO 13664 --- [seguridad6] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-17T15:55:39.415-05:00  INFO 13664 --- [seguridad6] [main] c.e.seguridad6.Seguridad6Application     : Started Seguridad6Application in 5.876 seconds (process running for 6.571)
+2025-11-17T15:56:06.879-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-11-17T15:56:06.880-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-11-17T15:56:36.883-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-11-17T15:56:36.884-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-11-17T15:57:06.892-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-11-17T15:57:06.892-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-11-17T15:57:17.893-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@15f519f7 is alive
+2025-11-17T15:57:19.129-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@7d8dfbc8 is alive
+2025-11-17T15:57:19.537-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@1f670068 is alive
+2025-11-17T15:57:19.540-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@2fab0bb2 is alive
+2025-11-17T15:57:22.065-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5c74f913 is alive
+2025-11-17T15:57:23.494-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@460c7113 is alive
+2025-11-17T15:57:29.819-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@46bab587 is alive
+2025-11-17T15:57:30.751-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@12a1225e is alive
+2025-11-17T15:57:34.104-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5ce655a5 is alive
+2025-11-17T15:57:36.243-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5c853701 is alive
+2025-11-17T15:57:36.899-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-11-17T15:57:36.899-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-11-17T15:58:04.052-05:00  INFO 13664 --- [seguridad6] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-17T15:58:04.058-05:00  INFO 13664 --- [seguridad6] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-17T15:58:04.063-05:00  INFO 13664 --- [seguridad6] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-17T15:58:04.065-05:00  INFO 13664 --- [seguridad6] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-17T15:58:04.065-05:00 DEBUG 13664 --- [seguridad6] [SpringApplicationShutdownHook] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before shutdown stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-11-17T15:58:04.067-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@15f519f7: (connection evicted)
+2025-11-17T15:58:04.069-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@5ce655a5: (connection evicted)
+2025-11-17T15:58:04.072-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@46bab587: (connection evicted)
+2025-11-17T15:58:04.074-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@12a1225e: (connection evicted)
+2025-11-17T15:58:04.076-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@2fab0bb2: (connection evicted)
+2025-11-17T15:58:04.081-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@1f670068: (connection evicted)
+2025-11-17T15:58:04.083-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@5c853701: (connection evicted)
+2025-11-17T15:58:04.085-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@5c74f913: (connection evicted)
+2025-11-17T15:58:04.087-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@7d8dfbc8: (connection evicted)
+2025-11-17T15:58:04.088-05:00 DEBUG 13664 --- [seguridad6] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@460c7113: (connection evicted)
+2025-11-17T15:58:04.090-05:00 DEBUG 13664 --- [seguridad6] [SpringApplicationShutdownHook] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  shutdown stats (total=0/10, idle=0/10, active=0, waiting=0)
+2025-11-17T15:58:04.090-05:00  INFO 13664 --- [seguridad6] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

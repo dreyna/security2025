@@ -46,9 +46,6 @@ public class JwtProvider {
                 .compact();
     }
 
-    /**
-     * Devuelve el username desde el token
-     */
     public String getNombreUsuarioFromToken(String token) {
         return Jwts.parser()
                 .verifyWith(Keys.hmacShaKeyFor(secret.getBytes()))
